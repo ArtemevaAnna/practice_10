@@ -1,0 +1,11 @@
+def Fibonacci(pos):
+    if pos <= 1:
+        return 0
+    if pos <= 2:
+        return 1
+    n_1 = Fibonacci (pos-1)
+    n_2 = Fibonacci (pos-2)
+    n = n_1 + n_2
+    return n
+nth_fibo = Fibonacci(5)
+print (nth_fibo)
